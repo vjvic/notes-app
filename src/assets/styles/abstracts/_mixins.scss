@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+@mixin border-sides(
+  $top: false,
+  $right: false,
+  $bottom: false,
+  $left: false,
+  $color: $light-gray
+) {
+  @if $top {
+    border-top: 1px solid $color;
+  }
+
+  @if $right {
+    border-right: 1px solid $color;
+  }
+
+  @if $bottom {
+    border-bottom: 1px solid $color;
+  }
+
+  @if $left {
+    border-left: 1px solid $color;
+  }
+}
+
+@mixin two-column-layout($fixed-width: 250px, $gap: 20px) {
+  display: flex;
+  gap: $gap;
+
+  > :first-child {
+    width: $fixed-width;
+  }
+
+  > :nth-child(2) {
+    flex: 1;
+  }
+}
+
+@mixin three-column-layout($fixed-width: 250px, $gap: 20px) {
+  display: flex;
+  gap: $gap;
+
+  > :first-child,
+  > :last-child {
+    width: $fixed-width;
+  }
+
+  > :nth-child(2) {
+    flex: 1;
+  }
+}
+
+@mixin layout-column($border: none) {
+  height: 100vh;
+  padding: 1rem;
+
+  @if $border == right {
+    @include border-sides($right: true);
+  } @else if $border == left {
+    @include border-sides($left: true);
+  }
+}

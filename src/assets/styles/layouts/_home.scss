@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+
+.home-layout {
+  @include two-column-layout();
+
+  &__sidebar {
+    @include layout-column(right);
+  }
+
+  &__content {
+    height: 100vh;
+    padding: 1rem;
+  }
+}

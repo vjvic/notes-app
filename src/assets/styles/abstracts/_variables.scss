@@ -1,0 +1,26 @@
+// _variables.scss
+
+//colors
+$color-primary-400: #5b7dfe;
+$color-primary-500: #325cfe;
+$color-primary-700: #2340cb;
+$color-secondary: #edeef1;
+$light-gray: #e3e3e4;
+$gray: #949494;
+
+//border radius
+$border-radius: 5px;
+
+//usage
+$buttons: (
+  primary: (
+    default: $color-primary-500,
+    hover: $color-primary-400,
+    pressed: $color-primary-700,
+  ),
+  secondary: (
+    default: $color-secondary,
+    hover: $light-gray,
+    pressed: $gray,
+  ),
+);

@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 20px;
+  @include border-sides($bottom: true);
+
+  &__title {
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &__user {
+    font-size: 16px;
+  }
+}

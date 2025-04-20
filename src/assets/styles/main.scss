@@ -1,0 +1,12 @@
+//abstracts
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+//components
+@use "components/Sidebar";
+@use "components/header";
+
+//layouts
+@use "layouts/app";
+@use "layouts/home";
+@use "layouts/notes";

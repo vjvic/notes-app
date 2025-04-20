@@ -1,0 +1,18 @@
+@use "../abstracts/mixins" as *;
+
+.notes-layout {
+  @include three-column-layout();
+
+  &__sidebar {
+    @include layout-column(right);
+  }
+
+  &__content {
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  &__action-panel {
+    @include layout-column(left);
+  }
+}
