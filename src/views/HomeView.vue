@@ -3,7 +3,10 @@
 <template>
   <div class="home-layout">
     <div class="home-layout__sidebar">
-      <p>First column</p>
+      <Button color="primary" border="pill" class="uk-width-1-1">
+        <Plus />
+        Create New Note
+      </Button>
     </div>
 
     <div class="home-layout__content">
@@ -11,3 +14,8 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import Button from "@/Components/Button.vue";
+import { Plus } from "lucide-vue-next";
+</script>
