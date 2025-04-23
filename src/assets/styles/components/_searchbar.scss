@@ -1,0 +1,7 @@
+@use "./../abstracts/variables" as *;
+
+.uk-search-input {
+  &:focus {
+    outline: 0.4px solid $color-primary-500;
+  }
+}
