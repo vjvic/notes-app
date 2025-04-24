@@ -1,21 +1,15 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="home-layout">
-    <div class="home-layout__sidebar">
-      <Button color="primary" border="pill" class="uk-width-1-1">
-        <Plus />
-        Create New Note
-      </Button>
-    </div>
+    <NoteItem />
 
-    <div class="home-layout__content">
+    <section class="home-layout__content">
       <p>Main content</p>
-    </div>
+    </section>
   </div>
+
+  todo create noteitem component
 </template>
 
 <script setup>
-import Button from "@/Components/Button.vue";
-import { Plus } from "lucide-vue-next";
+import NoteItem from "@/components/NoteItem.vue";
 </script>

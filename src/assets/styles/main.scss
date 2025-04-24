@@ -7,8 +7,12 @@
 @use "components/header";
 @use "components/searchbar";
 @use "components/button";
+@use "components/badge";
+@use "components/note-item";
 
 //layouts
 @use "layouts/app";
 @use "layouts/home";
 @use "layouts/notes";
+
+@use "global";

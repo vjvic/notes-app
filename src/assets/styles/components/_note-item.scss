@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+
+.note-item {
+  padding: 0.5rem;
+  display: block;
+
+  &--active,
+  &:hover {
+    background-color: $color-secondary;
+  }
+
+  h5 {
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    padding-top: 0.5rem;
+    font-size: 12px;
+  }
+}
