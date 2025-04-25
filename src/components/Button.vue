@@ -49,10 +49,4 @@ const handleClick = () => {
 };
 </script>
 
-<style scoped>
-::v-deep [slot="icon"] {
-  margin-right: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-}
-</style>
+<style scoped></style>

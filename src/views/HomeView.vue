@@ -1,13 +1,11 @@
 <template>
   <div class="home-layout">
-    <NoteItem />
+    <aside class="home-layout__sidebar">
+      <NoteItem />
+    </aside>
 
-    <section class="home-layout__content">
-      <p>Main content</p>
-    </section>
+    <section class="home-layout__content"></section>
   </div>
-
-  todo create noteitem component
 </template>
 
 <script setup>
