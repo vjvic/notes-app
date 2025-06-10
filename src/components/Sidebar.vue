@@ -16,7 +16,11 @@
             class="uk-flex uk-flex-between uk-flex-1 uk-text-decoration-none"
           >
             <div class="uk-flex uk-flex-middle">
-              <component :is="navItem.icon" class="uk-margin-small-right" />
+              <component
+                :is="navItem.icon"
+                class="uk-margin-small-right"
+                :size="16"
+              />
               <span>{{ navItem.label }}</span>
             </div>
             <ChevronRight class="sidebar__chevron" />
@@ -36,7 +40,11 @@
             class="uk-flex uk-flex-between uk-flex-1 uk-text-decoration-none"
           >
             <div class="uk-flex uk-flex-middle">
-              <component class="uk-margin-small-right" :is="dummyTag.icon" />
+              <component
+                class="uk-margin-small-right"
+                :is="dummyTag.icon"
+                :size="16"
+              />
               <span>{{ dummyTag.label }}</span>
             </div>
             <ChevronRight class="sidebar__chevron" />

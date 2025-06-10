@@ -13,11 +13,11 @@
         color="default"
         class="uk-width-1-1 uk-margin-small-bottom uk-flex"
       >
-        <Archive class="uk-text-meta" />
+        <span><Archive class="uk-text-meta" :size="16" /></span>
         <span class="uk-margin-small-left">Archived Note</span>
       </Button>
       <Button color="default" class="uk-width-1-1 uk-flex">
-        <Trash class="uk-text-meta" />
+        <span><Trash class="uk-text-meta" :size="16" /></span>
         <span class="uk-margin-small-left">Delete Note</span>
       </Button>
     </div>

@@ -30,6 +30,10 @@ const props = defineProps({
     type: String,
     default: "rounded", // rounded, pill, circle
   },
+  size: {
+    type: String,
+    default: "default", // Disabled state
+  },
   disabled: {
     type: Boolean,
     default: false, // Disabled state
@@ -39,7 +43,12 @@ const props = defineProps({
 const emit = defineEmits(["click"]);
 
 const buttonClasses = computed(() => {
-  return ["uk-button", `uk-button-${props.color}`, `uk-border-${props.border}`];
+  return [
+    "uk-button",
+    `uk-button-${props.color}`,
+    `uk-border-${props.border}`,
+    `uk-button-${props.size}`,
+  ];
 });
 
 const handleClick = () => {

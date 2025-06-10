@@ -52,7 +52,7 @@
 }
 
 @mixin layout-column($border: none) {
-  height: 100vh;
+  height: calc(100vh - 90px);
   padding: 1rem;
 
   @if $border == right {

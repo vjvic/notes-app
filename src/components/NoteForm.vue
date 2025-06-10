@@ -3,7 +3,7 @@
     <fieldset class="uk-fieldset">
       <div class="uk-margin">
         <input
-          class="uk-input uk-text-bold uk-text-large uk-border-rounded"
+          class="uk-input uk-text-bold uk-text-large uk-border-rounded uk-padding-remove"
           type="text"
           placeholder="Enter a title..."
           aria-label="Input"
@@ -11,11 +11,12 @@
       </div>
 
       <div class="uk-flex uk-flex-middle">
-        <p
-          class="notes-layout__tag uk-margin-remove-bottom uk-margin-small-right"
+        <div
+          class="notes-layout__tag uk-flex uk-flex-middle uk-margin-remove-bottom uk-margin-small-right"
         >
-          Tags
-        </p>
+          <span class="uk-margin-small-right"><Tag :size="20" /></span>
+          <span>Tags</span>
+        </div>
         <input
           class="uk-input uk-text-meta uk-border-rounded"
           type="text"
@@ -24,11 +25,12 @@
         />
       </div>
       <div class="uk-flex uk-flex-middle">
-        <p
-          class="notes-layout__edited uk-margin-remove-bottom uk-margin-small-right"
+        <div
+          class="notes-layout__edited uk-flex uk-flex-middle uk-margin-remove-bottom uk-margin-small-right"
         >
-          Last Edited
-        </p>
+          <span class="uk-margin-small-right"><Clock :size="20" /></span>
+          <span> Last Edited</span>
+        </div>
         <p class="notes-layout__date uk-margin-remove uk-text-meta">
           Not yet saved.
         </p>
@@ -38,10 +40,19 @@
 
       <textarea
         class="uk-textarea uk-height-1-1 uk-border-rounded"
-        rows="30"
+        rows="33"
         placeholder="Start typing your note here..."
         aria-label="Textarea"
       ></textarea>
     </fieldset>
+
+    <hr />
+
+    <Button color="secondary" size="small">Submit</Button>
   </form>
 </template>
+
+<script setup lang="ts">
+import { Tag, Clock } from "lucide-vue-next";
+import Button from "./Button.vue";
+</script>
